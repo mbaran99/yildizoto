@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Yıldız Otomotiv | Şanlıurfa Oto Kaporta, Boya & Tamir Servisi | Ahmet Usta</title>
+  <meta name="description" content="Şanlıurfa Eyyübiye Evren Sanayi Sitesi'nde Yıldız Otomotiv. 30 yıllık tecrübeli usta Ahmet Bozkurt ile oto kaporta düzeltme, fırınlı oto boya, mekanik tamir. Arayın: 0542 743 12 02">
+  <meta name="keywords" content="şanlıurfa oto kaporta, eyyübiye oto tamir, evren sanayi oto boya, yıldız otomotiv şanlıurfa, ahmet bozkurt kaporta, şanlıurfa oto doğrultma, kaporta boya urfa, göçük düzeltme şanlıurfa">
+  <meta name="author" content="Yıldız Otomotiv - Ahmet Bozkurt">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://yildizotomotivsanliurfa.com/">
+  
+  <meta name="geo.region" content="TR-63">
+  <meta name="geo.placename" content="Şanlıurfa">
+  <meta name="geo.position" content="37.1432;38.7410">
+
+  <meta property="og:type" content="business.business">
+  <meta property="og:title" content="Yıldız Otomotiv - Şanlıurfa Oto Kaporta & Tamir Servisi">
+  <meta property="og:description" content="30 Yıllık Sektör Tecrübesiyle Ahmet Usta Yönetiminde Kaporta, Boya ve Mekanik Tamir Hizmetleri.">
+  <meta property="og:url" content="https://yildizotomotivsanliurfa.com/">
+  <meta property="og:site_name" content="Yıldız Otomotiv Şanlıurfa">
+  <meta property="og:locale" content="tr_TR">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Yıldız Otomotiv Oto Kaporta & Tamir",
+    "description": "Şanlıurfa Eyyübiye Evren Sanayi Sitesi'nde 30 yıllık tecrübeyle profesyonel oto kaporta, oto boya ve tamir servisi.",
+    "url": "https://yildizotomotivsanliurfa.com/",
+    "telephone": "+905427431202",
+    "priceRange": "₺₺",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Batıkent, Evren 21. Sk. No:9",
+      "addressLocality": "Eyyübiye",
+      "addressRegion": "Şanlıurfa",
+      "postalCode": "63250",
+      "addressCountry": "TR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 37.1432,
+      "longitude": 38.7410
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "08:00",
+      "closes": "19:00"
+    }
+  }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #07090e; color: #e2e8f0; line-height: 1.6; padding-top: 90px; }
+    a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
+    
+    :root {
+      --primary: #0f172a;
+      --accent: #dc2626;
+      --accent-glow: rgba(220, 38, 38, 0.4);
+      --gold: #f59e0b;
+      --bg-card: #111827;
+      --bg-glass: rgba(17, 24, 39, 0.75);
+      --border-glow: rgba(220, 38, 38, 0.25);
+    }
+
+    .navbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(7, 9, 14, 0.85); box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+      backdrop-filter: blur(16px); padding: 15px 40px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 90px; border-bottom: 1px solid var(--border-glow);
+    }
+    
+    .nav-logo-3d { display: flex; align-items: center; gap: 14px; }
+    .logo-3d-icon {
+      width: 52px; height: 50px; background: linear-gradient(135deg, #ef4444 0%, #991b1b 100%);
+      border-radius: 14px; display: flex; align-items: center; justify-content: center;
+      position: relative; border: 1px solid rgba(255,255,255,0.3);
+      box-shadow: 0 8px 20px var(--accent-glow), inset 0 2px 4px rgba(255,255,255,0.4);
+      transform: perspective(500px) rotateY(-10deg) rotateX(5deg);
+      transition: transform 0.4s ease;
+    }
+    .nav-logo-3d:hover .logo-3d-icon { transform: perspective(500px) rotateY(0deg) rotateX(0deg) scale(1.05); }
+    .logo-3d-icon i.fa-star { position: absolute; top: -6px; right: -6px; color: var(--gold); font-size: 16px; filter: drop-shadow(0 0 6px var(--gold)); }
+    .logo-text h1 { font-family: 'Orbitron', sans-serif; font-size: 20px; font-weight: 900; color: #fff; letter-spacing: 1px; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+    .logo-text span { font-size: 10px; font-weight: 800; color: var(--accent); letter-spacing: 3px; text-transform: uppercase; display: block; margin-top: 2px; }
+
+    .nav-links { display: flex; gap: 25px; align-items: center; }
+    .nav-links a { font-size: 14px; font-weight: 600; color: #94a3b8; position: relative; padding: 5px 0; }
+    .nav-links a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--accent); transition: width 0.3s; box-shadow: 0 0 8px var(--accent); }
+    .nav-links a:hover { color: #fff; }
+    .nav-links a:hover::after { width: 100%; }
+    
+    .nav-cta {
+      background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); color: #fff !important;
+      padding: 12px 24px; border-radius: 10px; font-size: 13px !important; font-weight: 700 !important;
+      box-shadow: 0 4px 20px var(--accent-glow); border: 1px solid rgba(255,255,255,0.2);
+    }
+    .nav-cta:hover { transform: translateY(-2px) scale(1.02); box-shadow: 0 8px 25px rgba(220,38,38,0.6); }
+
+    .hero {
+      background: radial-gradient(circle at 80% 20%, rgba(220, 38, 38, 0.15) 0%, transparent 40%),
+                  radial-gradient(circle at 20% 80%, rgba(245, 158, 11, 0.08) 0%, transparent 40%), #07090e;
+      padding: 70px 40px; min-height: calc(100vh - 90px); display: flex; align-items: center; position: relative;
+    }
+    .hero-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 50px; width: 100%; max-width: 1280px; margin: 0 auto; align-items: center; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(220, 38, 38, 0.12); border: 1px solid rgba(220, 38, 38, 0.3); padding: 8px 18px; border-radius: 50px; font-size: 12px; font-weight: 800; color: #f87171; text-transform: uppercase; margin-bottom: 20px; backdrop-filter: blur(8px); }
+    .hero-title { font-size: 48px; font-weight: 800; color: #fff; line-height: 1.15; margin-bottom: 20px; }
+    .hero-title span { color: var(--accent); display: block; font-size: 26px; font-weight: 700; margin-top: 8px; text-shadow: 0 0 20px var(--accent-glow); }
+    .hero-p { font-size: 16px; color: #94a3b8; margin-bottom: 35px; max-width: 580px; }
+    .hero-btns { display: flex; gap: 16px; flex-wrap: wrap; }
+    
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 16px 32px; border-radius: 12px; font-size: 14px; font-weight: 700; transition: all 0.3s; border: none; text-align: center; }
+    .btn-main { background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); color: #fff; box-shadow: 0 8px 25px var(--accent-glow); border: 1px solid rgba(255,255,255,0.2); }
+    .btn-main:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 12px 30px rgba(220,38,38,0.6); }
+    .btn-sub { background: #25D366; color: #fff; box-shadow: 0 8px 25px rgba(37,211,102,0.25); }
+    .btn-sub:hover { background: #1ebe57; transform: translateY(-3px); }
+
+    .hero-photo-card {
+      background: var(--bg-glass); border-radius: 24px; padding: 16px;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.8), 0 0 30px var(--border-glow);
+      border: 1px solid rgba(255,255,255,0.1); position: relative;
+      transform: perspective(1000px) rotateY(-6deg) rotateX(4deg);
+      transition: all 0.5s ease;
+    }
+    .hero-photo-card:hover { transform: perspective(1000px) rotateY(0deg) rotateX(0deg) scale(1.02); }
+    .hero-photo-card img { width: 100%; height: 380px; object-fit: cover; border-radius: 16px; display: block; }
+    .hero-photo-badge {
+      position: absolute; bottom: -20px; right: -20px; background: linear-gradient(135deg, #111827, #1f293d);
+      border: 2px solid var(--gold); padding: 15px 25px; border-radius: 16px; color: #fff;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.6); display: flex; align-items: center; gap: 12px;
+    }
+    .hero-photo-badge i { font-size: 32px; color: var(--gold); }
+    .hero-photo-badge div h4 { font-size: 18px; font-weight: 800; line-height: 1; color: var(--gold); }
+    .hero-photo-badge div p { font-size: 11px; text-transform: uppercase; font-weight: 700; color: #94a3b8; }
+
+    .section { padding: 90px 40px; position: relative; }
+    .section-bg { background-color: rgba(17, 24, 39, 0.5); }
+    .section-header { text-align: center; max-width: 700px; margin: 0 auto 60px; }
+    .section-badge { font-size: 12px; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; display: block; }
+    .section-title { font-size: 36px; font-weight: 800; color: #fff; margin-bottom: 15px; }
+    .section-desc { font-size: 15px; color: #94a3b8; }
+
+    .about-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 60px; max-width: 1240px; margin: 0 auto; align-items: center; }
+    .about-img-frame { position: relative; border-radius: 24px; padding: 12px; background: var(--bg-card); border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 20px 40px rgba(0,0,0,0.6); }
+    .about-img-frame img { width: 100%; height: 420px; object-fit: cover; border-radius: 16px; display: block; }
+    
+    .exp-box { display: flex; align-items: center; gap: 20px; margin-bottom: 25px; background: rgba(220, 38, 38, 0.08); padding: 20px; border-radius: 16px; border: 1px solid rgba(220,38,38,0.3); }
+    .exp-num { font-size: 48px; font-weight: 900; color: var(--gold); line-height: 1; font-family: 'Orbitron', sans-serif; }
+    .exp-text { font-size: 14px; font-weight: 700; color: #fff; text-transform: uppercase; }
+
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; width: 100%; max-width: 1240px; margin: 0 auto; }
+    .service-card {
+      background: var(--bg-card); border-radius: 20px; padding: 35px 28px;
+      border: 1px solid rgba(255,255,255,0.06); transition: all 0.4s ease; display: flex; flex-direction: column;
+      position: relative; overflow: hidden;
+    }
+    .service-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, transparent, var(--accent), transparent); opacity: 0; transition: opacity 0.4s; }
+    .service-card:hover { transform: translateY(-8px); border-color: rgba(220, 38, 38, 0.4); box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 0 20px rgba(220,38,38,0.2); }
+    .service-card:hover::before { opacity: 1; }
+    
+    .s-icon { width: 64px; height: 64px; background: linear-gradient(135deg, rgba(220,38,38,0.2), rgba(15,23,42,0.8)); border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 28px; color: #f87171; margin-bottom: 25px; border: 1px solid rgba(220,38,38,0.3); }
+    .service-card h3 { font-size: 20px; font-weight: 700; color: #fff; margin-bottom: 12px; }
+    .service-card p { font-size: 14px; color: #94a3b8; flex-grow: 1; }
+
+    .ba-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 35px; max-width: 1240px; margin: 0 auto; }
+    .ba-card {
+      background: var(--bg-card); border-radius: 20px; padding: 20px;
+      border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    }
+    .ba-card-title { font-size: 17px; font-weight: 700; color: #fff; margin-bottom: 15px; display: flex; align-items: center; justify-content: space-between; }
+    .ba-card-title span { font-size: 12px; color: var(--gold); font-weight: 600; background: rgba(245,158,11,0.1); padding: 4px 12px; border-radius: 50px; border: 1px solid rgba(245,158,11,0.2); }
+
+    .ba-slider-container {
+      position: relative; width: 100%; height: 320px; overflow: hidden; border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.1); user-select: none; touch-action: none;
+    }
+    .ba-img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
+    .ba-after-img { z-index: 1; }
+    .ba-before-img { z-index: 2; width: 50%; overflow: hidden; position: absolute; top: 0; left: 0; height: 100%; }
+    .ba-before-img img { width: 100%; height: 100%; object-fit: cover; max-width: none; }
+    
+    .ba-handle {
+      position: absolute; top: 0; bottom: 0; left: 50%; width: 3px; background: #fff;
+      z-index: 3; cursor: ew-resize; box-shadow: 0 0 12px rgba(220,38,38,0.9);
+    }
+    .ba-handle-btn {
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+      width: 40px; height: 40px; background: var(--accent); border: 2px solid #fff;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 14px; box-shadow: 0 0 20px rgba(0,0,0,0.9);
+    }
+
+    .ba-badge { position: absolute; top: 12px; font-size: 10px; font-weight: 800; padding: 4px 10px; border-radius: 6px; text-transform: uppercase; z-index: 4; letter-spacing: 1px; }
+    .ba-badge.before { left: 12px; background: rgba(220, 38, 38, 0.85); color: #fff; }
+    .ba-badge.after { right: 12px; background: rgba(34, 197, 94, 0.85); color: #fff; }
+
+    .testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; max-width: 1240px; margin: 0 auto; }
+    .testi-card { background: var(--bg-card); border-radius: 20px; padding: 30px; border: 1px solid rgba(255,255,255,0.06); display: flex; flex-direction: column; justify-content: space-between; position: relative; }
+    .testi-card i.quote { position: absolute; top: 20px; right: 20px; font-size: 32px; color: rgba(255,255,255,0.05); }
+    .stars { color: var(--gold); margin-bottom: 15px; font-size: 13px; }
+    .testi-text { font-size: 14px; color: #cbd5e1; font-style: italic; margin-bottom: 20px; }
+    .testi-author { font-weight: 700; color: #fff; font-size: 15px; }
+    .testi-sub { font-size: 12px; color: #64748b; }
+
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 60px; max-width: 1240px; margin: 0 auto; align-items: start; }
+    .contact-details h3 { font-size: 32px; font-weight: 800; color: #fff; margin-bottom: 20px; }
+    .contact-method { display: flex; gap: 20px; margin-bottom: 25px; align-items: flex-start; }
+    .contact-icon { width: 48px; height: 48px; background: rgba(220,38,38,0.1); color: #f87171; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; border: 1px solid rgba(220,38,38,0.2); }
+    .contact-info h4 { font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+    .contact-info p { color: #94a3b8; font-size: 14px; }
+    
+    .map-box { border-radius: 20px; overflow: hidden; height: 420px; box-shadow: 0 20px 50px rgba(0,0,0,0.8); border: 1px solid rgba(255,255,255,0.1); }
+    .map-box iframe { width: 100%; height: 100%; border: none; }
+
+    .footer { background: #030509; color: #fff; padding: 60px 40px 30px; border-top: 1px solid rgba(255,255,255,0.05); }
+    .footer-wrapper { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 30px; max-width: 1240px; margin: 0 auto; }
+    .footer-copyright { text-align: center; margin-top: 30px; font-size: 13px; color: #64748b; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 30px; }
+
+    .sticky-support { position: fixed; bottom: 0; left: 0; right: 0; z-index: 999; background: rgba(11,15,25,0.95); backdrop-filter: blur(12px); padding: 12px 20px; display: none; gap: 12px; box-shadow: 0 -5px 25px rgba(0,0,0,0.8); border-top: 1px solid rgba(255,255,255,0.1); }
+    .sticky-support a { flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px; border-radius: 10px; font-size: 13px; font-weight: 700; color: #fff; }
+    .stk-call { background: var(--accent); }
+    .stk-wp { background: #25D366; }
+
+    .reveal { opacity: 0; transform: translateY(25px); transition: all 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    @media(max-width: 1024px) {
+      .hero-grid, .about-grid, .contact-grid, .grid-3, .ba-grid, .testi-grid { grid-template-columns: 1fr; gap: 40px; }
+      .hero { padding: 40px 24px; text-align: center; }
+      .hero-title { font-size: 38px; }
+      .hero-text p { margin: 0 auto 35px; }
+      .hero-btns { justify-content: center; }
+      .hero-photo-card { transform: none; }
+      .section { padding: 60px 24px; }
+    }
+    
+    @media(max-width: 768px) {
+      .navbar { padding: 15px 24px; }
+      .nav-links { display: none; }
+      .sticky-support { display: flex; }
+      .footer { padding-bottom: 80px; }
+      .footer-wrapper { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo-3d" onclick="window.scrollTo(0,0)" style="cursor:pointer;">
+      <div class="logo-3d-icon">
+        <i class="fa-solid fa-car-burst" style="font-size: 22px; color: #fff;"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+      <div class="logo-text">
+        <h1>YILDIZ OTOMOTİV</h1>
+        <span>Oto Kaporta & Boya Servisi</span>
+      </div>
+    </div>
+    
+    <div class="nav-links">
+      <a href="#hakkimizda">Hakkımızda</a>
+      <a href="#hizmetler">Hizmetlerimiz</a>
+      <a href="#galeri">Öncesi / Sonrası</a>
+      <a href="#yorumlar">Müşteri Yorumları</a>
+      <a href="#iletisim">İletişim</a>
+      <a href="https://wa.me/905427431202?text=Merhaba,%20aracımın%20hasar%20durumu%20hakkında%20bilgi%20ve%20fiyat%20almak%20istiyorum." target="_blank" class="nav-cta"><i class="fa-brands fa-whatsapp"></i> WhatsApp Fiyat Al</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="hero-badge"><i class="fa-solid fa-location-dot"></i> Şanlıurfa Eyyübiye Evren Sanayi</div>
+        <h2 class="hero-title">Aracınız İlk Günkü <span>İhtişamına Kavuşsun</span></h2>
+        <p class="hero-p">Ahmet Bozkurt usta yönetiminde 30 yıllık tecrübe, milimetrik kaporta düzeltme ve fırınlı boya kalitesiyle Şanlıurfa'da aracınız için en güvenilir adres.</p>
+        <div class="hero-btns">
+          <a href="tel:+905427431202" class="btn btn-main"><i class="fa-solid fa-phone"></i> Ahmet Usta'yı Ara</a>
+          <a href="https://wa.me/905427431202?text=Merhaba%20Ahmet%20Usta,%20aracımın%20fotoğrafını%20gönderip%20fiyat%20almak%20istiyorum." target="_blank" class="btn btn-sub"><i class="fa-brands fa-whatsapp"></i> Fotoğraf Gönder Fiyat Al</a>
+        </div>
+      </div>
+      
+      <div class="hero-photo-card">
+        <img src="servis_dis.webp" alt="Yıldız Otomotiv Hasar Onarım Merkezi Şanlıurfa">
+        <div class="hero-photo-badge">
+          <i class="fa-solid fa-award"></i>
+          <div>
+            <h4>YILDIZ OTOMOTİV</h4>
+            <p>Hasar Onarım Merkezi</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" id="hakkimizda">
+    <div class="about-grid">
+      <div class="about-img-frame reveal">
+        <img src="servis_dis.webp" alt="Yıldız Otomotiv Atölye Görünümü">
+      </div>
+      <div class="reveal">
+        <div class="exp-box">
+          <div class="exp-num">30</div>
+          <div class="exp-text">Yıllık Ustalık ve Sektör Tecrübesi</div>
+        </div>
+        <span class="section-badge">USTALIK VE GÜVEN</span>
+        <h2 style="font-size:32px; font-weight:800; color:#fff; margin-bottom:15px;">Ahmet Bozkurt İmzasıyla Kusursuz İşçilik</h2>
+        <p style="color:#94a3b8; font-size:15px; margin-bottom:15px;">Yıldız Otomotiv'in kurucusu <strong>Ahmet Bozkurt</strong>, 30 senedir oto kaporta, doğrultma ve tamir sektöründe Şanlıurfa'nın öncü ve saygın ustalarından biridir.</p>
+        <p style="color:#94a3b8; font-size:15px; margin-bottom:25px;">Kaza yapmış, kaportası bükülmüş veya orijinal çizgilerini kaybetmiş her marka binek ve ticari aracı, en son teknoloji doğrultma ekipmanları ve fırın boya kalitesiyle ilk günkü fabrika standartlarına döndürüyoruz.</p>
+        <a href="tel:+905427431202" class="btn btn-main"><i class="fa-solid fa-screwdriver-wrench"></i> Servisimize Bekliyoruz</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-bg" id="hizmetler">
+    <div class="section-header reveal">
+      <span class="section-badge">UZMAN HİZMETLERİMİZ</span>
+      <h2 class="section-title">Otomobiliniz İçin Profesyonel Çözümler</h2>
+      <p class="section-desc">Ağır kaza onarımlarından detaylı fırın boyaya kadar tüm işlemler Ahmet Usta güvencesinde.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="service-card reveal">
+        <div class="s-icon"><i class="fa-solid fa-car-burst"></i></div>
+        <h3>Oto Kaporta Düzeltme</h3>
+        <p>Ağır kaza veya darbe sonucu şasi ve kaportada oluşan bükülme ve hasarların milimetrik olarak doğrultulması.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="s-icon"><i class="fa-solid fa-spray-can"></i></div>
+        <h3>Fırınlı Oto Boya</h3>
+        <p>Aracınızın orijinal renk koduna %100 uyumlu bilgisayarlı boya hazırlama ve tozsuz özel fırında komple/lokal boya.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="s-icon"><i class="fa-solid fa-wrench"></i></div>
+        <h3>Mekanik Tamir & Onarım</h3>
+        <p>Kaporta tamiri sürecinde veya periyodik olarak aracınızın motor, yürüyen aksam ve genel mekanik tamiratı.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="s-icon"><i class="fa-solid fa-hammer"></i></div>
+        <h3>Boyasız Göçük Düzeltme</h3>
+        <p>Dolu yağışı veya park darbeleri sonucu boyası bozulmamış alanların özel aparatlarla orijinalliği bozulmadan düzeltilmesi.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="s-icon"><i class="fa-solid fa-car-rear"></i></div>
+        <h3>Plastik & Tampon Tamiri</h3>
+        <p>Kırık, çatlak ve hasarlı plastik tampon, panjur ve aksamların özel plastik kaynağı yapılarak ilk günkü haline getirilmesi.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="s-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+        <h3>Pasta Cila & Parlatma</h3>
+        <p>Boya işlemi sonrası aracınızın pürüzsüz görünmesini sağlayan, çizik giderici ve boya koruyucu cila uygulamaları.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="galeri">
+    <div class="section-header reveal">
+      <span class="section-badge">GERÇEK İŞÇİLİK KALİTESİ</span>
+      <h2 class="section-title">Canlı Öncesi / Sonrası Karşılaştırması</h2>
+      <p class="section-desc">Ortadaki kaydırıcıyı sağa-sola çekerek Ahmet Usta'nın kaporta ve boya dönüşümlerini inceleyebilirsiniz.</p>
+    </div>
+
+    <div class="ba-grid">
+      
+      <!-- PROJE 1: FIAT FIORINO -->
+      <div class="ba-card reveal">
+        <div class="ba-card-title">
+          Fiat Fiorino - Ön & Yan Hasar Restorasyonu
+          <span>Tamamlandı</span>
+        </div>
+        <div class="ba-slider-container">
+          <span class="ba-badge before">HASARLI</span>
+          <span class="ba-badge after">TESLİM EDİLEN</span>
+          
+          <img class="ba-img ba-after-img" src="fiorino_after.jpg" alt="Fiat Fiorino Tamir Sonrası">
+          
+          <div class="ba-img ba-before-img">
+            <img src="fiorino_before.jpg" alt="Fiat Fiorino Tamir Öncesi">
+          </div>
+          
+          <div class="ba-handle">
+            <div class="ba-handle-btn"><i class="fa-solid fa-arrows-left-right"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJE 2: DACIA STEPWAY -->
+      <div class="ba-card reveal">
+        <div class="ba-card-title">
+          Dacia Stepway - Ön Badi & Çamurluk Onarımı
+          <span>Tamamlandı</span>
+        </div>
+        <div class="ba-slider-container">
+          <span class="ba-badge before">HASARLI</span>
+          <span class="ba-badge after">TESLİM EDİLEN</span>
+          
+          <img class="ba-img ba-after-img" src="dacia_after.jpg" alt="Dacia Stepway Tamir Sonrası">
+          
+          <div class="ba-img ba-before-img">
+            <img src="dacia_before.jpg" alt="Dacia Stepway Tamir Öncesi">
+          </div>
+          
+          <div class="ba-handle">
+            <div class="ba-handle-btn"><i class="fa-solid fa-arrows-left-right"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJE 3: FORD RANGER PICKUP -->
+      <div class="ba-card reveal">
+        <div class="ba-card-title">
+          Ford Ranger - Sağ Çamurluk & Fırın Boya
+          <span>Tamamlandı</span>
+        </div>
+        <div class="ba-slider-container">
+          <span class="ba-badge before">HASARLI</span>
+          <span class="ba-badge after">TESLİM EDİLEN</span>
+          
+          <img class="ba-img ba-after-img" src="ranger_after.jpg" alt="Ford Ranger Tamir Sonrası">
+          
+          <div class="ba-img ba-before-img">
+            <img src="ranger_before.jpg" alt="Ford Ranger Tamir Öncesi">
+          </div>
+          
+          <div class="ba-handle">
+            <div class="ba-handle-btn"><i class="fa-solid fa-arrows-left-right"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJE 4: VOLKSWAGEN GOLF 7 -->
+      <div class="ba-card reveal">
+        <div class="ba-card-title">
+          Volkswagen Golf 7 - Yan Kapı & Gövde Düzeltme
+          <span>Tamamlandı</span>
+        </div>
+        <div class="ba-slider-container">
+          <span class="ba-badge before">HASARLI</span>
+          <span class="ba-badge after">TESLİM EDİLEN</span>
+          
+          <img class="ba-img ba-after-img" src="golf_after.jpg" alt="VW Golf 7 Tamir Sonrası">
+          
+          <div class="ba-img ba-before-img">
+            <img src="golf_before.jpg" alt="VW Golf 7 Tamir Öncesi">
+          </div>
+          
+          <div class="ba-handle">
+            <div class="ba-handle-btn"><i class="fa-solid fa-arrows-left-right"></i></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section section-bg" id="yorumlar">
+    <div class="section-header reveal">
+      <span class="section-badge">MÜŞTERİ MEMNUNİYETİ</span>
+      <h2 class="section-title">Müşterilerimizin Yorumları</h2>
+      <p class="section-desc">Şanlıurfa'da Yıldız Otomotiv'i tercih eden araç sahiplerinin değerlendirmeleri.</p>
+    </div>
+
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <i class="fa-solid fa-quote-right quote"></i>
+        <div>
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="testi-text">"Ahmet Usta Şanlıurfa'da kaporta konusunda tek kelimeyle bir numara. Kazalı aracımı bıraktım, fabrika çıkışı gibi teslim aldım. Boya tonunda en ufak fark bile yoktu."</p>
+        </div>
+        <div>
+          <div class="testi-author">Mehmet Yılmaz</div>
+          <div class="testi-sub">Ford Focus Sahibi</div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal">
+        <i class="fa-solid fa-quote-right quote"></i>
+        <div>
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="testi-text">"Evren Sanayi'de güvenle aracınızı teslim edebileceğiniz nadir ustalardan. Ahmet Bey işinin ehli ve çok dürüst bir esnaf. Söylediği günde aracımı teslim etti."</p>
+        </div>
+        <div>
+          <div class="testi-author">Halil İbrahim Demir</div>
+          <div class="testi-sub">Toyota Corolla Sahibi</div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal">
+        <i class="fa-solid fa-quote-right quote"></i>
+        <div>
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="testi-text">"Başka servislerin değişmesi gerekiyor dediği çamurluğu Ahmet Usta ustalıkla düzeltti ve orijinalini korudu. Hem cebimizi korudu hem mükemmel iş çıkardı."</p>
+        </div>
+        <div>
+          <div class="testi-author">Bakır Öztürk</div>
+          <div class="testi-sub">Volkswagen Passat Sahibi</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="iletisim">
+    <div class="contact-grid">
+      <div class="contact-details reveal">
+        <span class="section-badge">BİZE ULAŞIN</span>
+        <h3>Ahmet Usta İle İletişime Geçin</h3>
+        <p style="color:#94a3b8; margin-bottom:30px;">Aracınızın kaporta, boya ve mekanik durumu hakkında fiyat teklifi almak için bizi hemen arayabilir ya da WhatsApp'tan fotoğraf gönderebilirsiniz.</p>
+        
+        <div class="contact-method">
+          <div class="contact-icon"><i class="fa-solid fa-user-gear"></i></div>
+          <div class="contact-info">
+            <h4>Servis Yetkilisi</h4>
+            <p>Ahmet Bozkurt (30 Yıllık Deneyim)</p>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="contact-info">
+            <h4>Telefon & GSM</h4>
+            <p><a href="tel:+905427431202" style="font-weight:700; color:#f87171; font-size:18px;">0542 743 12 02</a></p>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="contact-info">
+            <h4>Servis Adresimiz</h4>
+            <p>Yıldız Otomotiv, Batıkent, Evren 21. Sk. No:9,<br>63250 Eyyübiye / Şanlıurfa</p>
+            <a href="https://maps.google.com/maps?q=37.1432,38.7410" target="_blank" style="color:var(--gold); font-size:13px; font-weight:700; display:inline-block; margin-top:5px;"><i class="fa-solid fa-diamond-turn-right"></i> Google Maps İle Yol Tarifi Al</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-box reveal">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.123456789!2d38.7410!3d37.1432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzc3NSc1MC43Ik4gMzjCsDE2JzMwLjciRQ!5e0!3m2!1str!2str!4v1710000000000" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <div class="nav-logo-3d" style="cursor:default">
+        <div class="logo-3d-icon">
+          <i class="fa-solid fa-car-burst" style="font-size: 22px; color: #fff;"></i>
+        </div>
+        <div class="logo-text">
+          <h1>YILDIZ OTOMOTİV</h1>
+          <span>Oto Kaporta & Boya Servisi</span>
+        </div>
+      </div>
+      <div style="font-size: 14px; color: #64748b;">
+        Ahmet Bozkurt &bull; 0542 743 12 02 &bull; Eyyübiye / Şanlıurfa
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy; 2026 Yıldız Otomotiv Oto Kaporta & Tamir Servisi. Tüm Hakları Saklıdır.</p>
+    </div>
+  </footer>
+
+  <div class="sticky-support">
+    <a href="tel:+905427431202" class="stk-call"><i class="fa-solid fa-phone"></i> Ahmet Usta'yı Ara</a>
+    <a href="https://wa.me/905427431202?text=Merhaba%20Ahmet%20Usta,%20aracımın%20fotoğrafını%20gönderip%20fiyat%20almak%20istiyorum." target="_blank" class="stk-wp"><i class="fa-brands fa-whatsapp"></i> Fotoğraf Gönder</a>
+  </div>
+
+  <script>
+    function initBASliders() {
+      const sliders = document.querySelectorAll('.ba-slider-container');
+      
+      sliders.forEach(slider => {
+        const beforeImg = slider.querySelector('.ba-before-img');
+        const handle = slider.querySelector('.ba-handle');
+        let isDown = false;
+
+        function move(e) {
+          if (!isDown) return;
+          let rect = slider.getBoundingClientRect();
+          let pageX = e.pageX || (e.touches && e.touches[0].pageX);
+          if (!pageX) return;
+          
+          let x = pageX - rect.left - window.scrollX;
+          if (x < 0) x = 0;
+          if (x > rect.width) x = rect.width;
+          
+          let pct = (x / rect.width) * 100;
+          beforeImg.style.width = pct + '%';
+          handle.style.left = pct + '%';
+        }
+
+        slider.addEventListener('mousedown', (e) => { isDown = true; move(e); });
+        slider.addEventListener('touchstart', (e) => { isDown = true; move(e); });
+        
+        window.addEventListener('mouseup', () => isDown = false);
+        window.addEventListener('touchend', () => isDown = false);
+        
+        window.addEventListener('mousemove', move);
+        window.addEventListener('touchmove', move);
+      });
+    }
+
+    const reveals = document.querySelectorAll('.reveal');
+    const revealOnScroll = () => {
+      for (let i = 0; i < reveals.length; i++) {
+        let windowHeight = window.innerHeight;
+        let elementTop = reveals[i].getBoundingClientRect().top;
+        if (elementTop < windowHeight - 60) { reveals[i].classList.add('visible'); }
+      }
+    };
+
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', () => {
+      revealOnScroll();
+      initBASliders();
+    });
+  </script>
+</body>
+</html>
