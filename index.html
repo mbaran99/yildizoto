@@ -72,9 +72,10 @@
       --border-glow: rgba(220, 38, 38, 0.25);
     }
 
+    /* 3D CANLI HEADER & LOGO TASARIMI */
     .navbar {
       position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-      background: rgba(7, 9, 14, 0.85); box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+      background: rgba(7, 9, 14, 0.9); box-shadow: 0 10px 30px rgba(0,0,0,0.8);
       backdrop-filter: blur(16px); padding: 15px 40px;
       display: flex; align-items: center; justify-content: space-between;
       height: 90px; border-bottom: 1px solid var(--border-glow);
@@ -94,6 +95,7 @@
     .logo-text h1 { font-family: 'Orbitron', sans-serif; font-size: 20px; font-weight: 900; color: #fff; letter-spacing: 1px; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
     .logo-text span { font-size: 10px; font-weight: 800; color: var(--accent); letter-spacing: 3px; text-transform: uppercase; display: block; margin-top: 2px; }
 
+    /* DESKTOP MENÜ */
     .nav-links { display: flex; gap: 25px; align-items: center; }
     .nav-links a { font-size: 14px; font-weight: 600; color: #94a3b8; position: relative; padding: 5px 0; }
     .nav-links a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--accent); transition: width 0.3s; box-shadow: 0 0 8px var(--accent); }
@@ -107,6 +109,48 @@
     }
     .nav-cta:hover { transform: translateY(-2px) scale(1.02); box-shadow: 0 8px 25px rgba(220,38,38,0.6); }
 
+    /* MOBİL MENÜ TETİKLEYİCİ BUTON (HAMBURGER) */
+    .mobile-toggle {
+      display: none; width: 45px; height: 45px; background: rgba(220, 38, 38, 0.15);
+      border: 1px solid rgba(220, 38, 38, 0.4); border-radius: 10px;
+      align-items: center; justify-content: center; color: #fff; font-size: 20px;
+      cursor: pointer; transition: all 0.3s ease; box-shadow: 0 0 15px rgba(220, 38, 38, 0.2);
+    }
+    .mobile-toggle:hover { background: var(--accent); }
+
+    /* MOBİL SAĞ AÇILIR PANEL (OFF-CANVAS DRAWER) */
+    .mobile-drawer-overlay {
+      position: fixed; inset: 0; background: rgba(0, 0, 0, 0.75); backdrop-filter: blur(8px);
+      z-index: 1050; opacity: 0; visibility: hidden; transition: all 0.4s ease;
+    }
+    .mobile-drawer-overlay.active { opacity: 1; visibility: visible; }
+
+    .mobile-drawer {
+      position: fixed; top: 0; right: -300px; width: 280px; height: 100vh;
+      background: #0f172a; border-left: 2px solid var(--accent); z-index: 1060;
+      padding: 30px 25px; display: flex; flex-direction: column; justify-content: space-between;
+      transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: -10px 0 30px rgba(0,0,0,0.8);
+    }
+    .mobile-drawer.active { right: 0; }
+
+    .drawer-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 30px; }
+    .drawer-header h3 { font-family: 'Orbitron', sans-serif; font-size: 16px; color: #fff; }
+    .drawer-close { font-size: 22px; color: #94a3b8; cursor: pointer; transition: 0.3s; }
+    .drawer-close:hover { color: var(--accent); }
+
+    .drawer-menu { display: flex; flex-direction: column; gap: 15px; }
+    .drawer-menu a {
+      font-size: 15px; font-weight: 600; color: #cbd5e1; padding: 10px 14px;
+      border-radius: 8px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05);
+      display: flex; align-items: center; gap: 12px; transition: all 0.3s;
+    }
+    .drawer-menu a i { color: var(--accent); width: 20px; text-align: center; }
+    .drawer-menu a:hover { background: rgba(220,38,38,0.15); border-color: rgba(220,38,38,0.3); color: #fff; }
+
+    .drawer-footer { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center; }
+    .drawer-footer p { font-size: 12px; color: #64748b; margin-bottom: 12px; }
+
+    /* 3D CANLI HERO SECTION */
     .hero {
       background: radial-gradient(circle at 80% 20%, rgba(220, 38, 38, 0.15) 0%, transparent 40%),
                   radial-gradient(circle at 20% 80%, rgba(245, 158, 11, 0.08) 0%, transparent 40%), #07090e;
@@ -247,6 +291,7 @@
     @media(max-width: 768px) {
       .navbar { padding: 15px 24px; }
       .nav-links { display: none; }
+      .mobile-toggle { display: flex; } /* Mobil menü butonu görünür yapılır */
       .sticky-support { display: flex; }
       .footer { padding-bottom: 80px; }
       .footer-wrapper { flex-direction: column; text-align: center; }
@@ -255,6 +300,7 @@
 </head>
 <body>
 
+  <!-- NAVIGATION NAVBAR -->
   <nav class="navbar" id="navbar">
     <div class="nav-logo-3d" onclick="window.scrollTo(0,0)" style="cursor:pointer;">
       <div class="logo-3d-icon">
@@ -267,6 +313,7 @@
       </div>
     </div>
     
+    <!-- DESKTOP MENÜ -->
     <div class="nav-links">
       <a href="#hakkimizda">Hakkımızda</a>
       <a href="#hizmetler">Hizmetlerimiz</a>
@@ -275,8 +322,37 @@
       <a href="#iletisim">İletişim</a>
       <a href="https://wa.me/905427431202?text=Merhaba,%20aracımın%20hasar%20durumu%20hakkında%20bilgi%20ve%20fiyat%20almak%20istiyorum." target="_blank" class="nav-cta"><i class="fa-brands fa-whatsapp"></i> WhatsApp Fiyat Al</a>
     </div>
+
+    <!-- MOBİL MENÜ TETİKLEYİCİ BUTON -->
+    <div class="mobile-toggle" id="drawerOpenBtn" aria-label="Menüyü Aç">
+      <i class="fa-solid fa-bars-staggered"></i>
+    </div>
   </nav>
 
+  <!-- MOBİL SAĞ AÇILIR PANEL & SİYAH PERDE (OFF-CANVAS DRAWER) -->
+  <div class="mobile-drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div>
+      <div class="drawer-header">
+        <h3>MENÜ</h3>
+        <div class="drawer-close" id="drawerCloseBtn"><i class="fa-solid fa-xmark"></i></div>
+      </div>
+      <nav class="drawer-menu">
+        <a href="#hakkimizda" class="drawer-link"><i class="fa-solid fa-user-gear"></i> Hakkımızda</a>
+        <a href="#hizmetler" class="drawer-link"><i class="fa-solid fa-screwdriver-wrench"></i> Hizmetlerimiz</a>
+        <a href="#galeri" class="drawer-link"><i class="fa-solid fa-images"></i> Öncesi / Sonrası</a>
+        <a href="#yorumlar" class="drawer-link"><i class="fa-solid fa-comments"></i> Müşteri Yorumları</a>
+        <a href="#iletisim" class="drawer-link"><i class="fa-solid fa-location-dot"></i> İletişim & Konum</a>
+      </nav>
+    </div>
+    
+    <div class="drawer-footer">
+      <p>Ahmet Bozkurt - 30 Yıllık Tecrübe</p>
+      <a href="https://wa.me/905427431202?text=Merhaba%20Ahmet%20Usta,%20bilgi%20almak%20istiyorum." target="_blank" class="btn btn-sub" style="width:100%; font-size:12px; padding:12px;"><i class="fa-brands fa-whatsapp"></i> WhatsApp'tan Yazın</a>
+    </div>
+  </aside>
+
+  <!-- HERO BANNER VE SERVİS FOTOĞRAFI -->
   <header class="hero">
     <div class="hero-grid">
       <div class="hero-text">
@@ -302,6 +378,7 @@
     </div>
   </header>
 
+  <!-- HAKKIMIZDA & AHMET USTA -->
   <section class="section" id="hakkimizda">
     <div class="about-grid">
       <div class="about-img-frame reveal">
@@ -321,6 +398,7 @@
     </div>
   </section>
 
+  <!-- HİZMETLERİMİZ -->
   <section class="section section-bg" id="hizmetler">
     <div class="section-header reveal">
       <span class="section-badge">UZMAN HİZMETLERİMİZ</span>
@@ -367,6 +445,7 @@
     </div>
   </section>
 
+  <!-- GERÇEK BEFORE / AFTER İNTERAKTİF GALERİ -->
   <section class="section" id="galeri">
     <div class="section-header reveal">
       <span class="section-badge">GERÇEK İŞÇİLİK KALİTESİ</span>
@@ -467,6 +546,7 @@
     </div>
   </section>
 
+  <!-- MÜŞTERİ YORUMLARI -->
   <section class="section section-bg" id="yorumlar">
     <div class="section-header reveal">
       <span class="section-badge">MÜŞTERİ MEMNUNİYETİ</span>
@@ -513,6 +593,7 @@
     </div>
   </section>
 
+  <!-- İLETİŞİM VE HARİTA -->
   <section class="section" id="iletisim">
     <div class="contact-grid">
       <div class="contact-details reveal">
@@ -552,6 +633,7 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-wrapper">
       <div class="nav-logo-3d" style="cursor:default">
@@ -572,12 +654,41 @@
     </div>
   </footer>
 
+  <!-- MOBİL SABİT BÖLÜM -->
   <div class="sticky-support">
     <a href="tel:+905427431202" class="stk-call"><i class="fa-solid fa-phone"></i> Ahmet Usta'yı Ara</a>
     <a href="https://wa.me/905427431202?text=Merhaba%20Ahmet%20Usta,%20aracımın%20fotoğrafını%20gönderip%20fiyat%20almak%20istiyorum." target="_blank" class="stk-wp"><i class="fa-brands fa-whatsapp"></i> Fotoğraf Gönder</a>
   </div>
 
   <script>
+    // MOBİL SAĞ AÇILIR MENÜ (DRAWER) SCRIPT'İ
+    const drawerOpenBtn = document.getElementById('drawerOpenBtn');
+    const drawerCloseBtn = document.getElementById('drawerCloseBtn');
+    const drawerOverlay = document.getElementById('drawerOverlay');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const drawerLinks = document.querySelectorAll('.drawer-link');
+
+    function openDrawer() {
+      mobileDrawer.classList.add('active');
+      drawerOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeDrawer() {
+      mobileDrawer.classList.remove('active');
+      drawerOverlay.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+
+    drawerOpenBtn.addEventListener('click', openDrawer);
+    drawerCloseBtn.addEventListener('click', closeDrawer);
+    drawerOverlay.addEventListener('click', closeDrawer);
+
+    drawerLinks.forEach(link => {
+      link.addEventListener('click', closeDrawer);
+    });
+
+    // BEFORE-AFTER İNTERAKTİF ÇİZGİ KONTROL SCRIPT'İ
     function initBASliders() {
       const sliders = document.querySelectorAll('.ba-slider-container');
       
@@ -612,6 +723,7 @@
       });
     }
 
+    // SCROLL ANIMATION
     const reveals = document.querySelectorAll('.reveal');
     const revealOnScroll = () => {
       for (let i = 0; i < reveals.length; i++) {
